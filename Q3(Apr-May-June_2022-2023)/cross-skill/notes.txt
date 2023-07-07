@@ -1,3 +1,42 @@
 Section - 1:
 
- - 
+ - the cloud URL: rbook.cloud
+ commands link:  redis.io/commands
+
+Section - 2:
+
+to set a message:
+	SET message 'Hi there'
+To get the message
+	GET message
+
+SET and GET commands can onle be used for plain strings and numbers
+
+Commands for different data-types
+
+1. String (store plain strings and numbers)
+	SET, GET and APPEND
+
+2. List (List of strings)
+	LINDEX, LLEN and LINSERT
+
+3. Hash (collection of key-value pairs)
+	HGET, HSET and HDEL	
+	
+4. Set (set of strings (each string is unique)) 
+	SADD, SCARD and SDIFF 
+
+5. Sorted List (set of strings in a particular order)
+	ZADD, ZDIFF and ZCOUNT
+
+6. Bitmap (kind of like a collection of booleans)
+	BITOP, BITCOUNT and BITOP
+
+7. hyperlog (kind of like a collection of booleans)
+	PFADD, PFCOUNT and PFMERGE
+
+8. JSON (Nested JSON structure)
+	JSON.SET, JSON.GET and JSON.DEL
+
+9. Index (Internal data used for searching)
+	FT.SEARCH, FT.CREATE and FT.PROFILE
